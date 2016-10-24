@@ -23,13 +23,13 @@ def get_specific_data(option, number):
         json_result = results.json()
 
         if option == "characters":
-            print("""\nName: {} \nTitles: {} \nAllegiance: {} \nBorn: {} \nDied: {}""".format(json_result["name"], json_result["titles"],
+            print("""\nName: {} \nTitles: {} \nAllegiance: {} \nBorn: {} \nDied: {}\n""".format(json_result["name"], json_result["titles"],
                   json_result["allegiances"], json_result["born"], json_result["died"]))
         elif option == "books":
-            print("""\nName: {} \nAuthors: {} \nNumber of Pages: {} \nDate Released: {} """.format(json_result["name"], json_result["authors"],
+            print("""\nName: {} \nAuthors: {} \nNumber of Pages: {} \nDate Released: {}\n""".format(json_result["name"], json_result["authors"],
                   json_result["numberOfPages"], json_result["released"]))
         elif option == "houses":
-            print("""\nHouse Name: {} \nRegion of Westros: {} \nHouse Coat of Arms: {} \nHouse Words: {} \nFounded: {} \nSeats: {}\nCurrent Lord: {}"""
+            print("""\nHouse Name: {} \nRegion of Westros: {} \nHouse Coat of Arms: {} \nHouse Words: {} \nFounded: {} \nSeats: {}\nCurrent Lord: {}\n"""
                   .format(json_result["name"], json_result["region"], json_result["coatOfArms"], json_result["words"],
                   json_result["founded"], json_result["seats"], json_result["currentLord"]))
         else:
